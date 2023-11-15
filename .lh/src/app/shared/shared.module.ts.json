@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/shared/shared.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699366731533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699366875453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @NgModule({\n   declarations: [HeaderComponent],\n   imports: [CommonModule],\n-  exports: [],\n+  exports: [HeaderComponent],\n })\n export class SharedModule {}\n"
+                },
+                {
+                    "date": 1699369848605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { HeaderComponent } from './components/header/header.component';\n+import { RouterModule } from '@angular/router';\n \n @NgModule({\n   declarations: [HeaderComponent],\n-  imports: [CommonModule],\n+  imports: [CommonModule,RouterModule],\n   exports: [HeaderComponent],\n })\n export class SharedModule {}\n"
+                }
+            ],
+            "date": 1699366731533,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { HeaderComponent } from './components/header/header.component';\n\n\n\n@NgModule({\n  declarations: [\n    HeaderComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports:[]\n})\nexport class SharedModule { }\n"
+        }
+    ]
+}

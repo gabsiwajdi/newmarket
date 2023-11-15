@@ -1,0 +1,37 @@
+-shared module: il va contenir les coponent partager pour tous les projet telque 
+header ,footer ..
+
+-dans app.module.ts il faut fait appel a la module shared .
+- dans le module shared il faut aindique qui'il est export comme suit:
+
+ app.module.ts 
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, ****SharedModule****],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+
+    shared.module.ts
+     @NgModule({
+  declarations: [HeaderComponent],
+  imports: [CommonModule],
+  exports: [HeaderComponent], *******
+}) 
+
+2) installer bootstrap : npm i --save bootstrap@latest.
+  dans angular.json
+       
+        "styles": [
+  ajouter==>  "node_modules/bootstrap/scss/bootstrap.scss",*********
+              "src/styles.sass"
+            ],
+ng serve 
+
+N.B: il faut imporetr tous les moudules de projet dans app.module.ts
+
+3)  
+
+
+
+

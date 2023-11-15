@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/products/services/products.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699370447930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699370464360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import { Injectable } from '@angular/core';\n+import { Observable } from 'rxjs';\n \n+\n @Injectable({\n   providedIn: 'root',\n })\n export class ProductsService {\n"
+                },
+                {
+                    "date": 1699370536107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { HttpClient } from '@angular/common/http';\n import { Injectable } from '@angular/core';\n import { Observable } from 'rxjs';\n \n @Injectable({\n"
+                }
+            ],
+            "date": 1699370447930,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ProductsService {\n\n  constructor(private http:HttpClient) { }\n\n  getAllProducts():Observable <any> {\n    return this.http.get('https://fakestoreapi.com/products');\n  }\n\n  getCategories(): Observable<any> {\n    return this.http.get('https://fakestoreapi.com/products/categories');\n  }\n}\n"
+        }
+    ]
+}

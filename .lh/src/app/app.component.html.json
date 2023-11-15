@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/app/app.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1699365739779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699365746876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n+\n+\n+\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699366584292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n+\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699366610740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n+<app-header></app-header>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699369962803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n <app-header></app-header>\n-<router-outlet></router-outlet>\n\\ No newline at end of file\n+<div class=\"container\">\n+\n+  <router-outlet></router-outlet>\n+</div>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1699365739779,
+            "name": "Commit-0",
+            "content": "\n\n<router-outlet></router-outlet>\n"
+        }
+    ]
+}

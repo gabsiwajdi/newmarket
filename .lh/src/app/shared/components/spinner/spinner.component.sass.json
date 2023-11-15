@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/shared/components/spinner/spinner.component.sass",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699448492101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699448518869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   position: absolute;\r\n   width: 16px;\r\n   height: 16px;\r\n   border-radius: 50%;\r\n-  background: #fff;\r\n+  background: #950b0b;\r\n   animation: lds-grid 1.2s linear infinite;\r\n }\r\n .lds-grid div:nth-child(1) {\r\n   top: 8px;\r\n"
+                },
+                {
+                    "date": 1699448830983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,67 +1,65 @@\n-.lds-grid {\r\n-  display: inline-block;\r\n-  position: relative;\r\n-  width: 80px;\r\n-  height: 80px;\r\n-}\r\n-.lds-grid div {\r\n-  position: absolute;\r\n-  width: 16px;\r\n-  height: 16px;\r\n-  border-radius: 50%;\r\n-  background: #950b0b;\r\n-  animation: lds-grid 1.2s linear infinite;\r\n-}\r\n-.lds-grid div:nth-child(1) {\r\n-  top: 8px;\r\n-  left: 8px;\r\n-  animation-delay: 0s;\r\n-}\r\n-.lds-grid div:nth-child(2) {\r\n-  top: 8px;\r\n-  left: 32px;\r\n-  animation-delay: -0.4s;\r\n-}\r\n-.lds-grid div:nth-child(3) {\r\n-  top: 8px;\r\n-  left: 56px;\r\n-  animation-delay: -0.8s;\r\n-}\r\n-.lds-grid div:nth-child(4) {\r\n-  top: 32px;\r\n-  left: 8px;\r\n-  animation-delay: -0.4s;\r\n-}\r\n-.lds-grid div:nth-child(5) {\r\n-  top: 32px;\r\n-  left: 32px;\r\n-  animation-delay: -0.8s;\r\n-}\r\n-.lds-grid div:nth-child(6) {\r\n-  top: 32px;\r\n-  left: 56px;\r\n-  animation-delay: -1.2s;\r\n-}\r\n-.lds-grid div:nth-child(7) {\r\n-  top: 56px;\r\n-  left: 8px;\r\n-  animation-delay: -0.8s;\r\n-}\r\n-.lds-grid div:nth-child(8) {\r\n-  top: 56px;\r\n-  left: 32px;\r\n-  animation-delay: -1.2s;\r\n-}\r\n-.lds-grid div:nth-child(9) {\r\n-  top: 56px;\r\n-  left: 56px;\r\n-  animation-delay: -1.6s;\r\n-}\r\n-@keyframes lds-grid {\r\n-  0%, 100% {\r\n-    opacity: 1;\r\n-  }\r\n-  50% {\r\n-    opacity: 0.5;\r\n-  }\r\n-}\n\\ No newline at end of file\n+.lds-grid\r\n+  display: inline-block\r\n+  position: relative\r\n+  width: 80px\r\n+  height: 80px\r\n+\r\n+  div\r\n+    position: absolute\r\n+    width: 16px\r\n+    height: 16px\r\n+    border-radius: 50%\r\n+    background: #950b0b\r\n+    animation: lds-grid 1.2s linear infinite\r\n+\r\n+    &:nth-child(1)\r\n+      top: 8px\r\n+      left: 8px\r\n+      animation-delay: 0s\r\n+\r\n+    &:nth-child(2)\r\n+      top: 8px\r\n+      left: 32px\r\n+      animation-delay: -0.4s\r\n+\r\n+    &:nth-child(3)\r\n+      top: 8px\r\n+      left: 56px\r\n+      animation-delay: -0.8s\r\n+\r\n+    &:nth-child(4)\r\n+      top: 32px\r\n+      left: 8px\r\n+      animation-delay: -0.4s\r\n+\r\n+    &:nth-child(5)\r\n+      top: 32px\r\n+      left: 32px\r\n+      animation-delay: -0.8s\r\n+\r\n+    &:nth-child(6)\r\n+      top: 32px\r\n+      left: 56px\r\n+      animation-delay: -1.2s\r\n+\r\n+    &:nth-child(7)\r\n+      top: 56px\r\n+      left: 8px\r\n+      animation-delay: -0.8s\r\n+\r\n+    &:nth-child(8)\r\n+      top: 56px\r\n+      left: 32px\r\n+      animation-delay: -1.2s\r\n+\r\n+    &:nth-child(9)\r\n+      top: 56px\r\n+      left: 56px\r\n+      animation-delay: -1.6s\r\n+\r\n+@keyframes lds-grid\r\n+  0%, 100%\r\n+    opacity: 1\r\n+\r\n+  50%\r\n+    opacity: 0.5\r\n"
+                }
+            ],
+            "date": 1699448492101,
+            "name": "Commit-0",
+            "content": ".lds-grid {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 80px;\r\n  height: 80px;\r\n}\r\n.lds-grid div {\r\n  position: absolute;\r\n  width: 16px;\r\n  height: 16px;\r\n  border-radius: 50%;\r\n  background: #fff;\r\n  animation: lds-grid 1.2s linear infinite;\r\n}\r\n.lds-grid div:nth-child(1) {\r\n  top: 8px;\r\n  left: 8px;\r\n  animation-delay: 0s;\r\n}\r\n.lds-grid div:nth-child(2) {\r\n  top: 8px;\r\n  left: 32px;\r\n  animation-delay: -0.4s;\r\n}\r\n.lds-grid div:nth-child(3) {\r\n  top: 8px;\r\n  left: 56px;\r\n  animation-delay: -0.8s;\r\n}\r\n.lds-grid div:nth-child(4) {\r\n  top: 32px;\r\n  left: 8px;\r\n  animation-delay: -0.4s;\r\n}\r\n.lds-grid div:nth-child(5) {\r\n  top: 32px;\r\n  left: 32px;\r\n  animation-delay: -0.8s;\r\n}\r\n.lds-grid div:nth-child(6) {\r\n  top: 32px;\r\n  left: 56px;\r\n  animation-delay: -1.2s;\r\n}\r\n.lds-grid div:nth-child(7) {\r\n  top: 56px;\r\n  left: 8px;\r\n  animation-delay: -0.8s;\r\n}\r\n.lds-grid div:nth-child(8) {\r\n  top: 56px;\r\n  left: 32px;\r\n  animation-delay: -1.2s;\r\n}\r\n.lds-grid div:nth-child(9) {\r\n  top: 56px;\r\n  left: 56px;\r\n  animation-delay: -1.6s;\r\n}\r\n@keyframes lds-grid {\r\n  0%, 100% {\r\n    opacity: 1;\r\n  }\r\n  50% {\r\n    opacity: 0.5;\r\n  }\r\n}"
+        }
+    ]
+}

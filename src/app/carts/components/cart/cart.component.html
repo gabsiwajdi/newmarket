@@ -1,0 +1,70 @@
+<div class="cartBox">
+
+
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="">Start Date</label>
+                <input type="date" formControlName="start" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label for="">End Date</label>
+                <input type="date" formControlName="end" class="form-control">
+            </div>
+            <div class="col-md-2 flex aligin item-end">
+                <button class="btn btn-success" (click)="applyFiltre()">Apply</button>
+            </div>
+        </div>
+    </form>
+
+
+    <h1 class="tex-danger"> shopping Cart</h1>
+    <div class="headCart">
+        <p class="lead">you have <label class="text-danger">{{cartProduct.length}} </label> item in your cart</p>
+        <span class="text-danger card-header" (click)="clearAllProduct()">Clear shopping cart</span>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th style="width: 25%;">Quantity</th>
+                <th>Totale</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of cartProduct ; let index=index">
+                <td><img src="{{product.item.image}}" alt=""></td>
+                <td>{{product.item.title}}</td>
+                <td>{{product.item.price}} DNT</td>
+                <td>
+                    <div class="quantity">
+                        <button class="btn btn-dark" (click)="addAmmount(index)">+</button>
+                        <input type="number" class="form-control" (change)="detectChange()"
+                            [(ngModel)]="product.quantity" min="1">
+                        <button class="btn btn-dark" (click)="minecAmmount(index)">-</button>
+                    </div>
+                </td>
+                <td>{{product.item.price * product.quantity}} DNT</td>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteProdact(index)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total : {{total}}</th>
+                <th><button class="btn btn-success" (click)="addCart()">Order Now</button></th>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+<div class="alert alert-success" role="alet" *ngIf="success"><strong>Well done !</strong>Your order is succefully sen.
+</div>

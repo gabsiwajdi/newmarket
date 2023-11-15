@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/products/components/details-products/details-products.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699611933092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699611958648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n import { HttpClient } from '@angular/common/http';\n import { Component, OnInit } from '@angular/core';\n+import { ActivatedRoute } from '@angular/router';\n \n @Component({\n   selector: 'app-details-products',\n   templateUrl: './details-products.component.html',\n   styleUrls: ['./details-products.component.sass'],\n })\n export class DetailsProductsComponent implements OnInit {\n-  constructor(private http: HttpClient) {}\n+  constructor(private http: HttpClient , private route:ActivatedRoute) {}\n \n   ngOnInit(): void {}\n \n   getProductById(id: number) {}\n"
+                },
+                {
+                    "date": 1699612027932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   templateUrl: './details-products.component.html',\n   styleUrls: ['./details-products.component.sass'],\n })\n export class DetailsProductsComponent implements OnInit {\n-  constructor(private http: HttpClient, private route: ActivatedRoute) {}\n+  constructor(private http: HttpClient, private route: ActivatedRoute) {  } // activated route pour recuperer l 'id de l'url\n \n   ngOnInit(): void {}\n \n   getProductById(id: number) {}\n"
+                }
+            ],
+            "date": 1699611933092,
+            "name": "Commit-0",
+            "content": "import { HttpClient } from '@angular/common/http';\nimport { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-details-products',\n  templateUrl: './details-products.component.html',\n  styleUrls: ['./details-products.component.sass']\n})\nexport class DetailsProductsComponent implements OnInit {\n\n  constructor(private http:HttpClient) { }\n\n  ngOnInit(): void {\n  }\n\n\n  getProductById(id:number){\n    \n      \n  }\n\n}\n"
+        }
+    ]
+}

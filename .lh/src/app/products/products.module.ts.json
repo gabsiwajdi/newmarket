@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/products/products.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699371171222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699371195754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,16 @@\n import { CommonModule } from '@angular/common';\n import { AllProductsComponent } from './components/all-products/all-products.component';\n import { DetailsProductsComponent } from './components/details-products/details-products.component';\n \n+\n+\n @NgModule({\n-  declarations: [AllProductsComponent, DetailsProductsComponent],\n-  imports: [],\n+  declarations: [\n+    AllProductsComponent,\n+    DetailsProductsComponent\n+  ],\n+  imports: [\n+    CommonModule\n+  ]\n })\n-export class ProductsModule {}\n+export class ProductsModule { }\n"
+                },
+                {
+                    "date": 1699371666423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n \n @NgModule({\n   declarations: [\n     AllProductsComponent,\n-    DetailsProductsComponent\n+    DetailsProductsComponent,\n+    CommonModule\n   ],\n   imports: [\n     CommonModule\n   ]\n"
+                }
+            ],
+            "date": 1699371171222,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { AllProductsComponent } from './components/all-products/all-products.component';\nimport { DetailsProductsComponent } from './components/details-products/details-products.component';\n\n\n\n@NgModule({\n  declarations: [\n    AllProductsComponent,\n    DetailsProductsComponent\n  ],\n  imports: [\n    \n  ]\n})\nexport class ProductsModule { }\n"
+        }
+    ]
+}

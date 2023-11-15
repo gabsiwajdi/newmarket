@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/carts/components/cart/cart.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1699869333554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699869354319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n \n   constructor() { }\n \n   ngOnInit(): void {\n+    this.getCartProduct()\n   }\n \n \n   getCartProduct(){\n"
+                },
+                {
+                    "date": 1699869479030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,8 @@\n \n   getCartProduct() {\n     if ('cart' in localStorage) {\n       this.cartProduct = JSON.parse(localStorage.getItem('cart')!);\n+      console.log(this.cartProduct);\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1699870652266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,11 @@\n       this.cartProduct = JSON.parse(localStorage.getItem('cart')!);\n       console.log(this.cartProduct);\n     }\n   }\n+\n+  calculeSommeCart(){\n+    let somme=0\n+    for(let i=0;this.cartProduct;i++){\n+      somme = cartProduct[i].price\n+  }\n }\n"
+                }
+            ],
+            "date": 1699869333554,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-cart',\n  templateUrl: './cart.component.html',\n  styleUrls: ['./cart.component.sass']\n})\nexport class CartComponent implements OnInit {\n  cartProduct:any[]=[]\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n\n  getCartProduct(){\n    if ('cart' in localStorage) {\n      this.cartProduct = JSON.parse(localStorage.getItem('cart')!);\n  }\n}\n}\n"
+        }
+    ]
+}

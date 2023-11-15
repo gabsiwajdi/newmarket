@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/app.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699366855224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699369728502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,13 @@\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n import { SharedModule } from './shared/shared.module';\n+import { RouterModule } from '@angular/router';\n \n @NgModule({\n   declarations: [AppComponent],\n-  imports: [BrowserModule, AppRoutingModule, SharedModule],\n+  imports: [BrowserModule, AppRoutingModule, SharedModule,RouterModule],\n   providers: [],\n   bootstrap: [AppComponent],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1699370330716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,13 @@\n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n import { SharedModule } from './shared/shared.module';\n import { RouterModule } from '@angular/router';\n+import { CommonModule } from '@angular/common';\n \n @NgModule({\n   declarations: [AppComponent],\n-  imports: [BrowserModule, AppRoutingModule, SharedModule, RouterModule],\n+  imports: [CommonModule,BrowserModule, AppRoutingModule, SharedModule, RouterModule],\n   providers: [],\n   bootstrap: [AppComponent],\n })\n export class AppModule {}\n"
+                }
+            ],
+            "date": 1699366855224,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SharedModule } from './shared/shared.module';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    SharedModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n"
+        }
+    ]
+}

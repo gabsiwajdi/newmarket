@@ -1,0 +1,20 @@
+<div class="box">
+    <div class="row" *ngIf=!loading>
+        <div class="col-md-5 sm-12">
+            <img src="{{data.image}}" alt="sas">
+
+        </div>
+        <div class="info">
+            <ul class="list-unstyled">
+                <li> <strong>Title:</strong> {{data.title}}</li>
+                <li><strong>Category :</strong> {{data.category}}</li>
+                <li><strong>Description :</strong>{{data.description}}</li>
+                <li><strong> Price : </strong> {{data.price}} DNT</li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center" *ngIf=loading>
+        <app-spinner></app-spinner>
+
+    </div>
+</div>

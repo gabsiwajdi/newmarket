@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/app/products/components/details-products/details-products.component.sass",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1699611562369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699611592672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,18 @@\n-.box{\r\n-    width:90%;\r\n-    margin:100px auto;\r\n-    height:500px;\r\n-    ul{\r\n-        li{\r\n-            font-size:22px;\r\n-            margin:20px 0;\r\n+.box {\r\n+    width: 90%;\r\n+    margin: 100px auto;\r\n+    height: 500px;\r\n+\r\n+    ul {\r\n+        li {\r\n+            font-size: 22px;\r\n+            margin: 20px 0;\r\n\\ No newline at end of file\n         }\r\n     }\r\n-    img{\r\n-        width:100%;\r\n-        max-height:500px;\r\n-        min-height:500px;\r\n+\r\n+    img {\r\n+        width: 100%;\r\n+        max-height: 500px;\r\n+        min-height: 500px;\r\n     }\r\n-\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1699611613179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-.box {\r\n+box {\r\n     width: 90%;\r\n     margin: 100px auto;\r\n     height: 500px;\r\n \r\n@@ -14,5 +14,5 @@\n         width: 100%;\r\n         max-height: 500px;\r\n         min-height: 500px;\r\n     }\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1699611627559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-box {\r\n+.box {\r\n     width: 90%;\r\n     margin: 100px auto;\r\n     height: 500px;\r\n \r\n"
+                },
+                {
+                    "date": 1699611661993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n .box {\r\n+    \r\n     width: 90%;\r\n     margin: 100px auto;\r\n     height: 500px;\r\n \r\n"
+                },
+                {
+                    "date": 1699611668223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,14 @@\n-.box {\r\n-    \r\n-    width: 90%;\r\n-    margin: 100px auto;\r\n-    height: 500px;\r\n+.box\r\n+    width: 90%\r\n+    margin: 100px auto\r\n+    height: 500px\r\n \r\n-    ul {\r\n-        li {\r\n-            font-size: 22px;\r\n-            margin: 20px 0;\r\n-        }\r\n-    }\r\n+    ul\r\n+        li\r\n+            font-size: 22px\r\n+            margin: 20px 0\r\n \r\n-    img {\r\n-        width: 100%;\r\n-        max-height: 500px;\r\n-        min-height: 500px;\r\n-    }\r\n-}\r\n+    img\r\n+        width: 100%\r\n+        max-height: 500px\r\n+        min-height: 500px\r\n"
+                },
+                {
+                    "date": 1699611767652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n .box\r\n+    display: flex\r\n     width: 90%\r\n     margin: 100px auto\r\n     height: 500px\r\n \r\n+    img\r\n+        width: 100%\r\n+        max-height: 500px\r\n+        min-height: 500px\r\n+\r\n     ul\r\n+        display: flex\r\n+        flex-direction: column\r\n+        justify-content: flex-start\r\n+        align-items: flex-end\r\n+\r\n         li\r\n             font-size: 22px\r\n             margin: 20px 0\r\n-\r\n-    img\r\n-        width: 100%\r\n-        max-height: 500px\r\n-        min-height: 500px\r\n"
+                },
+                {
+                    "date": 1699611776105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,14 @@\n .box\r\n-    display: flex\r\n     width: 90%\r\n     margin: 100px auto\r\n     height: 500px\r\n \r\n+    ul\r\n+        li\r\n+            font-size: 22px\r\n+            margin: 20px 0\r\n+\r\n     img\r\n         width: 100%\r\n         max-height: 500px\r\n         min-height: 500px\r\n-\r\n-    ul\r\n-        display: flex\r\n-        flex-direction: column\r\n-        justify-content: flex-start\r\n-        align-items: flex-end\r\n-\r\n-        li\r\n-            font-size: 22px\r\n-            margin: 20px 0\r\n"
+                }
+            ],
+            "date": 1699611562369,
+            "name": "Commit-0",
+            "content": ".box{\r\n    width:90%;\r\n    margin:100px auto;\r\n    height:500px;\r\n    ul{\r\n        li{\r\n            font-size:22px;\r\n            margin:20px 0;\r\n        }\r\n    }\r\n    img{\r\n        width:100%;\r\n        max-height:500px;\r\n        min-height:500px;\r\n    }\r\n\r\n}"
+        }
+    ]
+}

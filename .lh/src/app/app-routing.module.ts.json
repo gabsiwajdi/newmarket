@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/app-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1699366554863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699366563882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n \n const routes: Routes = [\n-  {path:}\n+  \n ];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n"
+                },
+                {
+                    "date": 1699369531814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,14 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n+import { AllProductsComponent } from './products/components/all-products/all-products.component';\n+import { DetailsProductsComponent } from './products/components/details-products/details-products.component';\n \n-const routes: Routes = [];\n+const routes: Routes = [\n+  {path:\"products\",component:AllProductsComponent},\n+  {path:\"details\",component:DetailsProductsComponent}\n+  \n+];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n   exports: [RouterModule],\n"
+                },
+                {
+                    "date": 1699369583170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,15 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { AllProductsComponent } from './products/components/all-products/all-products.component';\n import { DetailsProductsComponent } from './products/components/details-products/details-products.component';\n+import { CartComponent } from './carts/components/cart/cart.component';\n \n const routes: Routes = [\n   { path: 'products', component: AllProductsComponent },\n   { path: 'details', component: DetailsProductsComponent },\n+  {path:\"carts\",component:CartComponent},\n+  {path:\"**\", redirectTo=\"products\"}\n ];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n"
+                }
+            ],
+            "date": 1699366554863,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {path:}\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n"
+        }
+    ]
+}

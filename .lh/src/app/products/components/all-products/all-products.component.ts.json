@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/products/components/all-products/all-products.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699370278716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699370608534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,30 @@\n import { Component, OnInit } from '@angular/core';\n+import { ProductsService } from '../../services/products.service';\n \n @Component({\n   selector: 'app-all-products',\n   templateUrl: './all-products.component.html',\n   styleUrls: ['./all-products.component.sass'],\n })\n export class AllProductsComponent implements OnInit {\n   products: any[] = [];\n+  categories: any[] = [];\n \n-  constructor() {}\n+  constructor(private service:ProductsService) {}\n \n   ngOnInit(): void {}\n+\n+  getAllProduct() {\n+    this.service.getAllProducts().subscribe((res: any) => {\n+      this.products = res;\n+      console.log(this.products);\n+    });\n+  }\n+\n+  getCategories() {\n+    this.service.getCategories().subscribe((res: any) => {\n+      this.categories = res;\n+      console.log(this.categories);\n+    });\n+  }\n }\n"
+                },
+                {
+                    "date": 1699370665414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,12 @@\n   categories: any[] = [];\n \n   constructor(private service:ProductsService) {}\n \n-  ngOnInit(): void {}\n+  ngOnInit(): void {\n+    this.getAllProduct();\n+    this.getCategories();\n+  }\n \n   getAllProduct() {\n     this.service.getAllProducts().subscribe((res: any) => {\n       this.products = res;\n"
+                }
+            ],
+            "date": 1699370278716,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-all-products',\n  templateUrl: './all-products.component.html',\n  styleUrls: ['./all-products.component.sass']\n})\nexport class AllProductsComponent implements OnInit {\n  products:any[]=[]\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

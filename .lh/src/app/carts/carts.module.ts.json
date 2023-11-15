@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/carts/carts.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699870107684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699870171165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import { NgModule } from '@angular/core';\n import { CommonModule } from '@angular/common';\n import { CartComponent } from './components/cart/cart.component';\n import { FormsModule } from '@angular/forms';\n+import { SharedModule } from '../shared/shared.module';\n \n @NgModule({\n   declarations: [CartComponent],\n-  imports: [CommonModule, FormsModule],\n+  imports: [CommonModule, FormsModule,SharedModule],\n })\n export class CartsModule {}\n"
+                },
+                {
+                    "date": 1699870179868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n import { SharedModule } from '../shared/shared.module';\n \n @NgModule({\n   declarations: [CartComponent],\n-  imports: [CommonModule, FormsModule, SharedModule],\n+  imports: [CommonModule,  SharedModule],\n })\n export class CartsModule {}\n"
+                }
+            ],
+            "date": 1699870107684,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { CartComponent } from './components/cart/cart.component';\nimport { FormsModule } from '@angular/forms';\n\n\n\n@NgModule({\n  declarations: [\n    CartComponent\n  ],\n  imports: [\n    CommonModule,\n    FormsModule\n  ]\n})\nexport class CartsModule { }\n"
+        }
+    ]
+}

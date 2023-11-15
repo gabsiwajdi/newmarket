@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/app/products/components/details-products/details-products.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1699611410343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699612837402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n \n         </div>\n         <div class=\"info\">\n             <ul class=\"list-unstyled\">\n-                <li> <strong>Title:</strong> rrrfr</li>\n-                <li><strong>Category :</strong> rgreg</li>\n-                <li><strong>Description :</strong>regergerg</li>\n-                <li><strong> Price : </strong> 52 DNT</li>\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li><strong>Category :</strong> {{data.category}}</li>\n+                <li><strong>Description :</strong>{{data.description}}</li>\n+                <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n         </div>\n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699612858060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n         </div>\n         <div class=\"info\">\n             <ul class=\"list-unstyled\">\n-                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li> <strong>Title:</strong> {{data.Title}}</li>\n                 <li><strong>Category :</strong> {{data.category}}</li>\n                 <li><strong>Description :</strong>{{data.description}}</li>\n                 <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n"
+                },
+                {
+                    "date": 1699612910275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"box\">\n     <div class=\"row\">\n         <div class=\"col-md-5 sm-12\">\n-            <img src=\"ds\" alt=\"sas\">\n+            <img src=\"{{data.image}}\" alt=\"sas\">\n \n         </div>\n         <div class=\"info\">\n             <ul class=\"list-unstyled\">\n"
+                },
+                {
+                    "date": 1699612983003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n         </div>\n         <div class=\"info\">\n             <ul class=\"list-unstyled\">\n-                <li> <strong>Title:</strong> {{data.Title}}</li>\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n                 <li><strong>Category :</strong> {{data.category}}</li>\n                 <li><strong>Description :</strong>{{data.description}}</li>\n                 <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n"
+                },
+                {
+                    "date": 1699613009506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+<div class=\"box\">\n+    <div class=\"row\">\n+        <div class=\"col-md-5 sm-12\">\n+            <img src=\"{{data.image}}\" alt=\"sas\">\n+\n+        </div>\n+        <div class=\"info\">\n+            <ul class=\"list-unstyled\">\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li><strong>Category :</strong> {{data.category}}</li>\n+                <li><strong>Description :</strong>{{data.description}}</li>\n+                <li><strong> Price : </strong> {{data.price}} DNT</li>\n+            </ul>\n+        </div>\n+    </div>\n+</div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699613034579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n         <div class=\"col-md-5 sm-12\">\n             <img src=\"{{data.image}}\" alt=\"sas\">\n \n         </div>\n-        <div class=\"info\">\n+        <div class=\"info\" >\n             <ul class=\"list-unstyled\">\n                 <li> <strong>Title:</strong> {{data.title}}</li>\n                 <li><strong>Category :</strong> {{data.category}}</li>\n                 <li><strong>Description :</strong>{{data.description}}</li>\n"
+                },
+                {
+                    "date": 1699613556889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+<div class=\"box\">\n+    <div class=\"row\">\n+        <div class=\"col-md-5 sm-12\">\n+            <img src=\"{{data.image}}\" alt=\"\">\n+\n+        </div>\n+        <div class=\"info\">\n+            <ul class=\"list-unstyled\">\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li><strong>Category :</strong> {{data.category}}</li>\n+                <li><strong>Description :</strong>{{data.description}}</li>\n+                <li><strong> Price : </strong> {{data.price}} DNT</li>\n+            </ul>\n+        </div>\n+    </div>\n+</div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699625026679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <div class=\"box\">\n     <div class=\"row\">\n         <div class=\"col-md-5 sm-12\">\n-            <img src=\"{{data.image}}\" alt=\"\">\n+            <img src=\"{{data.image}}\" alt=\"sas\">\n \n         </div>\n         <div class=\"info\">\n             <ul class=\"list-unstyled\">\n"
+                },
+                {
+                    "date": 1699625344801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+<div class=\"box\">\n+    <div class=\"row\">\n+        <div class=\"col-md-5 sm-12\">\n+            <img src=\"{{data.image}}\" alt=\"sas\">\n+\n+        </div>\n+        <div class=\"info\">\n+            <ul class=\"list-unstyled\">\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li><strong>Category :</strong> {{data.category}}</li>\n+                <li><strong>Description :</strong>{{data.description}}</li>\n+                <li><strong> Price : </strong> {{data.price}} DNT</li>\n+            </ul>\n+        </div>\n+    </div>\n+    <div class=\"w-center\" *ngIf loading=false>\n+        <app-spinner></app-spinner>\n+\n+    </div>\n+</div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699625411706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n                 <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n         </div>\n     </div>\n-    <div class=\"w-center\" *ngIf loading=false>\n+    <div class=\"w-center\" *ngIf loading>\n         <app-spinner></app-spinner>\n \n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699625430341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+<div class=\"box\">\n+    <div class=\"row\" *ngIf=\"!loading\">\n+        <div class=\"col-md-5 sm-12\">\n+            <img src=\"{{data.image}}\" alt=\"sas\">\n+\n+        </div>\n+        <div class=\"info\">\n+            <ul class=\"list-unstyled\">\n+                <li> <strong>Title:</strong> {{data.title}}</li>\n+                <li><strong>Category :</strong> {{data.category}}</li>\n+                <li><strong>Description :</strong>{{data.description}}</li>\n+                <li><strong> Price : </strong> {{data.price}} DNT</li>\n+            </ul>\n+        </div>\n+    </div>\n+    <div class=\"w-center\" *ngIf loading>\n+        <app-spinner></app-spinner>\n+\n+    </div>\n+</div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699625512284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <div class=\"box\">\n-    <div class=\"row\" *ngIf=\"!loading\">\n+    <div class=\"row\" *ngIf=!loading>\n         <div class=\"col-md-5 sm-12\">\n             <img src=\"{{data.image}}\" alt=\"sas\">\n \n         </div>\n@@ -12,9 +12,9 @@\n                 <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n         </div>\n     </div>\n-    <div class=\"w-center\" *ngIf loading>\n+    <div class=\"w-center\" *ngIf =loading>\n         <app-spinner></app-spinner>\n \n     </div>\n </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1699625549150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n                 <li><strong> Price : </strong> {{data.price}} DNT</li>\n             </ul>\n         </div>\n     </div>\n-    <div class=\"w-center\" *ngIf=loading>\n+    <div class=\"text-center\" *ngIf=loading>\n         <app-spinner></app-spinner>\n \n     </div>\n </div>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1699611410343,
+            "name": "Commit-0",
+            "content": "<div class=\"box\">\n    <div class=\"row\">\n        <div class=\"col-md-5 sm-12\">\n            <img src=\"ds\" alt=\"sas\">\n\n        </div>\n        <div class=\"info\">\n            <ul class=\"list-unstyled\">\n                <li> <strong>Title:</strong> rrrfr</li>\n                <li><strong>Category :</strong> rgreg</li>\n                <li><strong>Description :</strong>regergerg</li>\n                <li><strong> Price : </strong> 52 DNT</li>\n            </ul>\n        </div>\n    </div>\n</div>"
+        }
+    ]
+}

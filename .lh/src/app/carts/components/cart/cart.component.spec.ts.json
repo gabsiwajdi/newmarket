@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/carts/components/cart/cart.component.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1699870652250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1699870652250,
+            "name": "Commit-0",
+            "content": "import { ComponentFixture, TestBed } from '@angular/core/testing';\n\nimport { CartComponent } from './cart.component';\n\ndescribe('CartComponent', () => {\n  let component: CartComponent;\n  let fixture: ComponentFixture<CartComponent>;\n\n  beforeEach(async () => {\n    await TestBed.configureTestingModule({\n      declarations: [ CartComponent ]\n    })\n    .compileComponents();\n\n    fixture = TestBed.createComponent(CartComponent);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  });\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

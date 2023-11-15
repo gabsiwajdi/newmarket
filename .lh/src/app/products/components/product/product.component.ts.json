@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/products/components/product/product.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1699524370727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1699530844055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n-import { Component, OnInit, Input } from '@angular/core';\n+import { Component, OnInit, Input ,Output} from '@angular/core';\n \n @Component({\n   selector: 'app-product',\n   templateUrl: './product.component.html',\n   styleUrls: ['./product.component.sass'],\n })\n export class ProductComponent implements OnInit {\n   @Input() data: any = {};\n+  @Output() item:any=[];\n \n   constructor() {}\n \n   ngOnInit(): void {}\n+\n+  add(event:any){\n+\n+\n+  }\n }\n"
+                },
+                {
+                    "date": 1699530898196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   styleUrls: ['./product.component.sass'],\n })\n export class ProductComponent implements OnInit {\n   @Input() data: any = {};\n-  @Output() item: any = [];\n+  @Output() item = new EventEmmiter()\n \n   constructor() {}\n \n   ngOnInit(): void {}\n"
+                }
+            ],
+            "date": 1699524370727,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit,Input } from '@angular/core';\n\n@Component({\n  selector: 'app-product',\n  templateUrl: './product.component.html',\n  styleUrls: ['./product.component.sass']\n})\nexport class ProductComponent implements OnInit {\n  @Input () data:any ={}\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

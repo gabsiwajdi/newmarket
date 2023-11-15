@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/shared/components/select/select.component.sass",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1699524306580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1699524306580,
+            "name": "Commit-0",
+            "content": ".select select\r\n  margin-left: 10px\r\n  width: 20% /* Définir la largeur du select pour qu'il occupe tout l'espace disponible */\r\n  padding: 10px /* Ajouter de l'espacement interne pour un look plus aéré */\r\n  border: 1px solid #ccc /* Ajouter une bordure */\r\n  border-radius: 5px /* Arrondir les coins de la bordure */\r\n  background-color: #f5f5f5 /* Couleur de fond */\r\n  color: #333 /* Couleur du texte */\r\n  font-size: 16px /* Taille de police */\r\n  transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */"
+        }
+    ]
+}

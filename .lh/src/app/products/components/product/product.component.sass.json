@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/products/components/product/product.component.sass",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1699524287400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1699524287400,
+            "name": "Commit-0",
+            "content": ".item\r\n  width: 100%\r\n  text-decoration: none\r\n  color: #333\r\n  margin: 15px\r\n  display: inline-block\r\n  border-radius: 10px\r\n  box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3)\r\n  transition: all 0.3s ease-in-out\r\n\r\n  img\r\n    width: 100%\r\n    height: 200px\r\n    border-radius: 10px\r\n\r\n  .body\r\n    padding: 0\r\n\r\n  p\r\n    margin: 15px 0\r\n    height: 100px\r\n    overflow: hidden\r\n    font-size: 16px\r\n    padding: 5px 15px\r\n\r\n  h4\r\n    height: 75px\r\n    overflow: hidden\r\n    padding: 5px 15px\r\n    font-size: 18px\r\n    background-color: #eee\r\n    font-weight: 600\r\n    margin-top: 10px\r\n\r\n  &:hover\r\n    transform: scale(1.1)\r\n\r\n  span\r\n    background-color: #f1baba\r\n    padding: 3px 7px\r\n    border-radius: 70px\r\n\r\n  /* Style pour le bouton */\r\n  button\r\n    background-color: #28a745\r\n    color: #fff\r\n    border: none\r\n    padding: 10px 20px\r\n    cursor: pointer\r\n    border-radius: 10px\r\n    margin: 10px 15px\r\n    margin-right: 100px\r\n    font-weight: bold\r\n    transition: background-color 0.3s ease-in-out\r\n\r\n    &:hover\r\n      background-color: #218838"
+        }
+    ]
+}
