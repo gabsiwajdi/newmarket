@@ -30,7 +30,23 @@ ng serve
 
 N.B: il faut imporetr tous les moudules de projet dans app.module.ts
 
-3)  
+//////////////////////////////////////////////////////////////////////////
+
+function update 
+/////////////////
+update(item:any){
+this.form.get('title')?.setValue(item.title)
+this.form.get('description')?.setValue(item.description)
+this.form.get('price')?.setValue(item.price)
+this.form.get('category')?.setValue(item.category)
+/////// Autre Methode ////////////
+this.form.patchValue({
+title:item.title,
+description:item.description,
+..
+..
+})
+}
 
 
 

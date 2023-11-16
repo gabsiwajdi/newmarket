@@ -3,11 +3,79 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1699369282549,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700048231280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,5 @@\n   background-color: #f5f5f5 /* Couleur de fond */\r\n   color: #333 /* Couleur du texte */\r\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n+\r\n"
+                },
+                {
+                    "date": 1700048244318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,70 @@\n+.item\r\n+  width: 100%\r\n+  text-decoration: none\r\n+  color: #333\r\n+  margin: 15px\r\n+  display: inline-block\r\n+  border-radius: 10px\r\n+  box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3)\r\n+  transition: all 0.3s ease-in-out\r\n+\r\n+  img\r\n+    width: 100%\r\n+    height: 200px\r\n+    border-radius: 10px\r\n+\r\n+  .body\r\n+    padding: 0\r\n+\r\n+  p\r\n+    margin: 15px 0\r\n+    height: 100px\r\n+    overflow: hidden\r\n+    font-size: 16px\r\n+    padding: 5px 15px\r\n+\r\n+  h4\r\n+    height: 75px\r\n+    overflow: hidden\r\n+    padding: 5px 15px\r\n+    font-size: 18px\r\n+    background-color: #eee\r\n+    font-weight: 600\r\n+    margin-top: 10px\r\n+\r\n+  &:hover\r\n+    transform: scale(1.1)\r\n+\r\n+  span\r\n+    background-color: #f1baba\r\n+    padding: 3px 7px\r\n+    border-radius: 70px\r\n+\r\n+  /* Style pour le bouton */\r\n+  button\r\n+    background-color: #28a745\r\n+    color: #fff\r\n+    border: none\r\n+    padding: 10px 20px\r\n+    cursor: pointer\r\n+    border-radius: 10px\r\n+    margin: 10px 15px\r\n+    margin-right: 100px\r\n+    font-weight: bold\r\n+    transition: background-color 0.3s ease-in-out\r\n+\r\n+    &:hover\r\n+      background-color: #218838\r\n+\r\n+.select select\r\n+  margin-left: 10px\r\n+  width: 20% /* Définir la largeur du select pour qu'il occupe tout l'espace disponible */\r\n+  padding: 10px /* Ajouter de l'espacement interne pour un look plus aéré */\r\n+  border: 1px solid #ccc /* Ajouter une bordure */\r\n+  border-radius: 5px /* Arrondir les coins de la bordure */\r\n+  background-color: #f5f5f5 /* Couleur de fond */\r\n+  color: #333 /* Couleur du texte */\r\n+  font-size: 16px /* Taille de police */\r\n+  transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n+\r\n+textaria{}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048255344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,73 +66,7 @@\n   color: #333 /* Couleur du texte */\r\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n-textaria{}\n-.item\r\n-  width: 100%\r\n-  text-decoration: none\r\n-  color: #333\r\n-  margin: 15px\r\n-  display: inline-block\r\n-  border-radius: 10px\r\n-  box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3)\r\n-  transition: all 0.3s ease-in-out\r\n-\r\n-  img\r\n-    width: 100%\r\n-    height: 200px\r\n-    border-radius: 10px\r\n-\r\n-  .body\r\n-    padding: 0\r\n-\r\n-  p\r\n-    margin: 15px 0\r\n-    height: 100px\r\n-    overflow: hidden\r\n-    font-size: 16px\r\n-    padding: 5px 15px\r\n-\r\n-  h4\r\n-    height: 75px\r\n-    overflow: hidden\r\n-    padding: 5px 15px\r\n-    font-size: 18px\r\n-    background-color: #eee\r\n-    font-weight: 600\r\n-    margin-top: 10px\r\n-\r\n-  &:hover\r\n-    transform: scale(1.1)\r\n-\r\n-  span\r\n-    background-color: #f1baba\r\n-    padding: 3px 7px\r\n-    border-radius: 70px\r\n-\r\n-  /* Style pour le bouton */\r\n-  button\r\n-    background-color: #28a745\r\n-    color: #fff\r\n-    border: none\r\n-    padding: 10px 20px\r\n-    cursor: pointer\r\n-    border-radius: 10px\r\n-    margin: 10px 15px\r\n-    margin-right: 100px\r\n-    font-weight: bold\r\n-    transition: background-color 0.3s ease-in-out\r\n-\r\n-    &:hover\r\n-      background-color: #218838\r\n-\r\n-.select select\r\n-  margin-left: 10px\r\n-  width: 20% /* Définir la largeur du select pour qu'il occupe tout l'espace disponible */\r\n-  padding: 10px /* Ajouter de l'espacement interne pour un look plus aéré */\r\n-  border: 1px solid #ccc /* Ajouter une bordure */\r\n-  border-radius: 5px /* Arrondir les coins de la bordure */\r\n-  background-color: #f5f5f5 /* Couleur de fond */\r\n-  color: #333 /* Couleur du texte */\r\n-  font-size: 16px /* Taille de police */\r\n-  transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\n\\ No newline at end of file\n+textarea{\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048265390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,6 @@\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n textarea{\r\n-  \r\n+  max-width:\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048273698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,7 @@\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n textarea{\r\n-  max-width:\r\n+  max-width:100%\r\n+  min\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048283693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,7 @@\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n textarea{\r\n   max-width:100%\r\n-  min\r\n+  min-width:100%\r\n+  \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048306246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,7 @@\n \r\n textarea{\r\n   max-width:100%\r\n   min-width:100%\r\n-  \r\n+  max-height:120%\r\n+  min-height100%\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048312558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,6 +70,6 @@\n textarea{\r\n   max-width:100%\r\n   min-width:100%\r\n   max-height:120%\r\n-  min-height100%\r\n-}\n\\ No newline at end of file\n+  min-height120%\r\n+}\r\n"
+                },
+                {
+                    "date": 1700048325279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,4 +72,5 @@\n   min-width:100%\r\n   max-height:120%\r\n   min-height120%\r\n }\r\n+modal\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048336979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,5 +72,9 @@\n   min-width:100%\r\n   max-height:120%\r\n   min-height120%\r\n }\r\n-modal\n\\ No newline at end of file\n+modal{\r\n+  img{\r\n+    \r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048346245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,81 @@\n+.item\r\n+  width: 100%\r\n+  text-decoration: none\r\n+  color: #333\r\n+  margin: 15px\r\n+  display: inline-block\r\n+  border-radius: 10px\r\n+  box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3)\r\n+  transition: all 0.3s ease-in-out\r\n+\r\n+  img\r\n+    width: 100%\r\n+    height: 200px\r\n+    border-radius: 10px\r\n+\r\n+  .body\r\n+    padding: 0\r\n+\r\n+  p\r\n+    margin: 15px 0\r\n+    height: 100px\r\n+    overflow: hidden\r\n+    font-size: 16px\r\n+    padding: 5px 15px\r\n+\r\n+  h4\r\n+    height: 75px\r\n+    overflow: hidden\r\n+    padding: 5px 15px\r\n+    font-size: 18px\r\n+    background-color: #eee\r\n+    font-weight: 600\r\n+    margin-top: 10px\r\n+\r\n+  &:hover\r\n+    transform: scale(1.1)\r\n+\r\n+  span\r\n+    background-color: #f1baba\r\n+    padding: 3px 7px\r\n+    border-radius: 70px\r\n+\r\n+  /* Style pour le bouton */\r\n+  button\r\n+    background-color: #28a745\r\n+    color: #fff\r\n+    border: none\r\n+    padding: 10px 20px\r\n+    cursor: pointer\r\n+    border-radius: 10px\r\n+    margin: 10px 15px\r\n+    margin-right: 100px\r\n+    font-weight: bold\r\n+    transition: background-color 0.3s ease-in-out\r\n+\r\n+    &:hover\r\n+      background-color: #218838\r\n+\r\n+.select select\r\n+  margin-left: 10px\r\n+  width: 20% /* Définir la largeur du select pour qu'il occupe tout l'espace disponible */\r\n+  padding: 10px /* Ajouter de l'espacement interne pour un look plus aéré */\r\n+  border: 1px solid #ccc /* Ajouter une bordure */\r\n+  border-radius: 5px /* Arrondir les coins de la bordure */\r\n+  background-color: #f5f5f5 /* Couleur de fond */\r\n+  color: #333 /* Couleur du texte */\r\n+  font-size: 16px /* Taille de police */\r\n+  transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n+\r\n+textarea{\r\n+  max-width:100%\r\n+  min-width:100%\r\n+  max-height:120%\r\n+  min-height120%\r\n+}\r\n+modal{\r\n+  img{\r\n+    width:100%\r\n+    \r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048354835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,87 +75,7 @@\n }\r\n modal{\r\n   img{\r\n     width:100%\r\n-    \r\n+    max-height:\r\n   }\r\n-}\n-.item\r\n-  width: 100%\r\n-  text-decoration: none\r\n-  color: #333\r\n-  margin: 15px\r\n-  display: inline-block\r\n-  border-radius: 10px\r\n-  box-shadow: 0px 2px 5px rgba(202, 37, 16, 0.3)\r\n-  transition: all 0.3s ease-in-out\r\n-\r\n-  img\r\n-    width: 100%\r\n-    height: 200px\r\n-    border-radius: 10px\r\n-\r\n-  .body\r\n-    padding: 0\r\n-\r\n-  p\r\n-    margin: 15px 0\r\n-    height: 100px\r\n-    overflow: hidden\r\n-    font-size: 16px\r\n-    padding: 5px 15px\r\n-\r\n-  h4\r\n-    height: 75px\r\n-    overflow: hidden\r\n-    padding: 5px 15px\r\n-    font-size: 18px\r\n-    background-color: #eee\r\n-    font-weight: 600\r\n-    margin-top: 10px\r\n-\r\n-  &:hover\r\n-    transform: scale(1.1)\r\n-\r\n-  span\r\n-    background-color: #f1baba\r\n-    padding: 3px 7px\r\n-    border-radius: 70px\r\n-\r\n-  /* Style pour le bouton */\r\n-  button\r\n-    background-color: #28a745\r\n-    color: #fff\r\n-    border: none\r\n-    padding: 10px 20px\r\n-    cursor: pointer\r\n-    border-radius: 10px\r\n-    margin: 10px 15px\r\n-    margin-right: 100px\r\n-    font-weight: bold\r\n-    transition: background-color 0.3s ease-in-out\r\n-\r\n-    &:hover\r\n-      background-color: #218838\r\n-\r\n-.select select\r\n-  margin-left: 10px\r\n-  width: 20% /* Définir la largeur du select pour qu'il occupe tout l'espace disponible */\r\n-  padding: 10px /* Ajouter de l'espacement interne pour un look plus aéré */\r\n-  border: 1px solid #ccc /* Ajouter une bordure */\r\n-  border-radius: 5px /* Arrondir les coins de la bordure */\r\n-  background-color: #f5f5f5 /* Couleur de fond */\r\n-  color: #333 /* Couleur du texte */\r\n-  font-size: 16px /* Taille de police */\r\n-  transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n-\r\n-textarea{\r\n-  max-width:100%\r\n-  min-width:100%\r\n-  max-height:120%\r\n-  min-height120%\r\n-}\r\n-modal{\r\n-  img{\r\n-    \r\n-  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700048385235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,16 +66,17 @@\n   color: #333 /* Couleur du texte */\r\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n-textarea{\r\n-  max-width:100%\r\n-  min-width:100%\r\n-  max-height:120%\r\n-  min-height120%\r\n+textarea {\r\n+  max-width: 100%;\r\n+  min-width: 100%;\r\n+  max-height: 120%;\r\n+  min-height: 120%;\r\n }\r\n-modal{\r\n\\ No newline at end of file\n-  img{\r\n-    width:100%\r\n-    max-height:\r\n+\r\n+modal {\r\n+  img {\r\n+    width: 100%;\r\n+    max-height: 85px;\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1700048417819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,4 +79,5 @@\n     width: 100%;\r\n     max-height: 85px;\r\n   }\r\n }\r\n+\r\n"
+                },
+                {
+                    "date": 1700048517876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n   color: #333 /* Couleur du texte */\r\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n-textarea {\r\n+.textarea {\r\n   max-width: 100%;\r\n   min-width: 100%;\r\n   max-height: 120%;\r\n   min-height: 120%;\r\n"
+                },
+                {
+                    "date": 1700048552486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,18 +66,18 @@\n   color: #333 /* Couleur du texte */\r\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n-.textarea {\r\n+textarea \r\n   max-width: 100%;\r\n   min-width: 100%;\r\n   max-height: 120%;\r\n   min-height: 120%;\r\n-}\r\n \r\n-modal {\r\n-  img {\r\n+\r\n+modal \r\n+  img \r\n     width: 100%;\r\n     max-height: 85px;\r\n-  }\r\n-}\r\n+  \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1700048569460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,17 +67,17 @@\n   font-size: 16px /* Taille de police */\r\n   transition: border-color 0.3s ease-in-out /* Ajouter une transition de couleur de bordure */\r\n \r\n textarea \r\n-  max-width: 100%;\r\n-  min-width: 100%;\r\n-  max-height: 120%;\r\n-  min-height: 120%;\r\n+  max-width: 100%\r\n+  min-width: 100%\r\n+  max-height: 120%\r\n+  min-height: 120%\r\n \r\n \r\n modal \r\n   img \r\n-    width: 100%;\r\n-    max-height: 85px;\r\n+    width: 100%\r\n+    max-height: 85px\r\n   \r\n \r\n \r\n"
                 }
             ],
             "date": 1699369282549,

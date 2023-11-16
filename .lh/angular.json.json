@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1699365613944,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700046923763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n               \"src/assets\"\n             ],\n             \"styles\": [\n               \"node_modules/bootstrap/scss/bootstrap.scss\",\n+              \"node_modules/jquery/dist/\",\n               \"src/styles.sass\"\n             ],\n             \"scripts\": []\n           },\n"
+                },
+                {
+                    "date": 1700046930404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n               \"src/assets\"\n             ],\n             \"styles\": [\n               \"node_modules/bootstrap/scss/bootstrap.scss\",\n-              \"node_modules/jquery/dist/\",\n+              \"node_modules/jquery/dist/jquery\",\n               \"src/styles.sass\"\n             ],\n             \"scripts\": []\n           },\n"
+                },
+                {
+                    "date": 1700046938871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n               \"src/assets\"\n             ],\n             \"styles\": [\n               \"node_modules/bootstrap/scss/bootstrap.scss\",\n-              \"node_modules/jquery/dist/jquery\",\n+              \"node_modules/jquery/dist/jquery.min.js\",\n               \"src/styles.sass\"\n             ],\n             \"scripts\": []\n           },\n"
+                },
+                {
+                    "date": 1700047025310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n               \"src/assets\"\n             ],\n             \"styles\": [\n               \"node_modules/bootstrap/scss/bootstrap.scss\",\n-              \"node_modules/jquery/dist/jquery.min.js\",\n+              \"node_modules/jquery/dist/jquery.js\",\n               \"src/styles.sass\"\n             ],\n             \"scripts\": []\n           },\n"
                 }
             ],
             "date": 1699365613944,
